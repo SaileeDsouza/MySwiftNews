@@ -14,7 +14,6 @@ protocol ApplicationServiceDelegate: AnyObject {
 
 class ApplicationServices: ApplicationServiceDelegate  {
     
-    
     private(set) var articleService: ArticleService!
     
     init() {

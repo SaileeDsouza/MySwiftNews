@@ -16,7 +16,7 @@ protocol ArticleService: class {
     func getArticles(onCompletion: @escaping ((ErrorModel?, [ArticleModel]?) -> ()))
 }
 
-class ArticleManager: BaseService, ArticleService {
+final class ArticleManager: BaseService, ArticleService {
     var articles: [ArticleModel]?
     private static let getArticlesUrl = "https://www.reddit.com/r/swift/.json"
     
